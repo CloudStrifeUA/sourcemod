@@ -216,6 +216,9 @@ public: //IPlayerManager
 	void RecheckAnyAdmins();
 public: // IGameEventListener2
 	void FireGameEvent(IGameEvent *pEvent);
+#if SOURCE_ENGINE >= SE_LEFT4DEAD
+	int GetEventDebugID( void );
+#endif
 public:
 	inline int MaxClients()
 	{
